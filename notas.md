@@ -34,6 +34,12 @@ Estas referencias ayudaran a crear nuestro enunciado para nuestro sistema
 - [IBM pagos](https://www.ibm.com/docs/es/tririga/10.5.2?topic=contracts-managing-payments)
 - [Seguro de arrendamiento](https://www.semana.com/columnistas/articulo/arriendo-inmueble-diferentes-formas-de-pago-de-arriendo/71882/)
 
+## Enunciado del problema
+
+Inmobiliarias del país buscan constantemente solucionar problemas, desde el cumplimiento de los terminos de contrato, hasta con lo que el cliente ha pactado con la inmobiliaria, en este caso buscan controloar de manera efectiva el paog de arrendos y tener formas de control eficaces a la hora de hacer seguimiento de este tipo de negocio que es lo que genera los mayores ingresos en este tipo de negocios.
+
+La inmobiliaria **Predios Colombia** buscan un sistema para el seguimiento y control de pago de arriendos para su empresa, para ello necesitan que el sistema cumplan con las siguientes funciones:
+
 ### Requisitos funcionales primordiales
 
 1. Gestión de facturas: Gestiona de manera fácil y sencilla las facturas que tengan asociadas a contratos con los clientes donde cuentan con los datos de arrendador, predio, precio del arriendo, numero de cuotas y cuotas atrasadas.
