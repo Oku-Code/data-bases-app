@@ -36,7 +36,7 @@ Estas referencias ayudaran a crear nuestro enunciado para nuestro sistema
 
 ## Enunciado del problema
 
-Inmobiliarias del país buscan constantemente solucionar problemas, desde el cumplimiento de los terminos de contrato, hasta con lo que el cliente ha pactado con la inmobiliaria, en este caso buscan controloar de manera efectiva el paog de arrendos y tener formas de control eficaces a la hora de hacer seguimiento de este tipo de negocio que es lo que genera los mayores ingresos en este tipo de negocios.
+Inmobiliarias del país buscan constantemente solucionar problemas, desde el cumplimiento de los terminos de contrato, hasta con lo que el cliente ha pactado con la inmobiliaria, en este caso buscan controlar de manera efectiva el pago de arriendos y tener formas de control eficaces a la hora de hacer seguimiento de este tipo de negocio que es lo que genera los mayores ingresos en este tipo de negocios.
 
 La inmobiliaria **Predios Colombia** buscan un sistema para el seguimiento y control de pago de arriendos para su empresa, para ello necesitan que el sistema cumplan con las siguientes funciones:
 
