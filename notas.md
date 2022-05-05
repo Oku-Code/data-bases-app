@@ -26,6 +26,8 @@ Tema seleccionado: *Sistema de seguimiento y control de pago de arrendos de una 
 
 ## Referencias
 
+Estas referencias ayudaran a crear nuestro enunciado para nuestro sistema
+
 - [Invest in Colombia](https://investincolombia.com.co/es/como-invertir/pasos-para-establecer-su-compa%C3%B1%C3%ADa/como-comprar-inmuebles-en-colombia)
 - [Referencia](https://daytona.cloud/pago-de-impuestos.html)
 - [IBM](https://www.ibm.com/docs/es/tririga/10.5.2?topic=assets-managing-leased-owned-property-contracts)
