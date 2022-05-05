@@ -33,3 +33,17 @@ Estas referencias ayudaran a crear nuestro enunciado para nuestro sistema
 - [IBM](https://www.ibm.com/docs/es/tririga/10.5.2?topic=assets-managing-leased-owned-property-contracts)
 - [IBM pagos](https://www.ibm.com/docs/es/tririga/10.5.2?topic=contracts-managing-payments)
 - [Seguro de arrendamiento](https://www.semana.com/columnistas/articulo/arriendo-inmueble-diferentes-formas-de-pago-de-arriendo/71882/)
+
+### Requisitos funcionales primordiales
+
+1. Gestión de facturas: Gestiona de manera fácil y sencilla las facturas que tengan asociadas a contratos con los clientes donde cuentan con los datos de arrendador, predio, precio del arriendo, numero de cuotas y cuotas atrasadas.
+
+2. Gestión de cuentas por pagar: Procesar pagos, reconciliar gastos y calcular ajustes para poder tener puntualidad a la hora de tener problemas en la consignación de cuotas para los arrendatarios.
+
+3. Gestión de cuentas por cobrar: Procesar facturas de arrendamiento que tenga con el arrendatario, generar recibos por parte del arrendatario para poder tener un mecanismo de control sobre el dinero que se deposita o consigna a la hora del pago.
+
+### Requisitos no funcionales
+
+1. Generar estados durante las operaciones que se realizan a la hora de consultar los datos.
+2. La plataforma debe ser accesible desde cualquier dispositivo conectado a la red.
+3. La plataforma debe contar con una interfaz amigable para que pueda ser utilizada por cualquier persona
