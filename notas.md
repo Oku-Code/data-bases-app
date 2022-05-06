@@ -42,7 +42,7 @@ La inmobiliaria **Predios Colombia** buscan un sistema para el seguimiento y con
 
 ### Requisitos funcionales primordiales
 
-1. Gestión de facturas: Gestiona de manera fácil y sencilla las **facturas** que tengan asociadas a **contratos** con los clientes donde cuentan con los datos de **arrendador**, **predio**, precio del arriendo, numero de cuotas y cuotas atrasadas.
+1. Gestión de facturas: Gestiona de manera fácil y sencilla las **facturas** que tengan asociadas a **contratos** con los clientes donde cuentan con los datos de **arrendador**, **predio**, precio del arriendo, número de cuotas y cuotas atrasadas.
 
 2. Gestión de cuentas por pagar: Procesar pagos, reconciliar **gastos** y calcular ajustes para poder tener puntualidad a la hora de tener problemas en la consignación de cuotas para los arrendatarios.
 
@@ -65,3 +65,7 @@ La inmobiliaria **Predios Colombia** buscan un sistema para el seguimiento y con
 - Predio
 - Gasto
 - Arrendatario
+
+### Imagen Modelo E/R
+
+![alt](images/modelo\ E-R.jpeg) 
