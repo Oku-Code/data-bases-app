@@ -68,4 +68,6 @@ La inmobiliaria **Predios Colombia** buscan un sistema para el seguimiento y con
 
 ### Imagen Modelo E/R
 
-![alt](images/modelo\ E-R.jpeg) 
+![alt](images/modelo.jpeg) 
+
+Este serà el modelo entidad relaciòn de nuestro sistema para la inmobiliaria **Predios Colombia**.
