@@ -71,3 +71,8 @@ La inmobiliaria **Predios Colombia** buscan un sistema para el seguimiento y con
 ![alt](images/modelo.jpeg) 
 
 Este serà el modelo entidad relaciòn de nuestro sistema para la inmobiliaria **Predios Colombia**.
+
+![alt](images/modeloLogico.jpg) 
+
+Este será el modelo relacional de nuestro sistema para la inmobiliaria **Predios Colombia**.
+
