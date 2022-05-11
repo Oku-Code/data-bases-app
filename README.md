@@ -8,8 +8,8 @@ This project is focus on how to create a control system, data base, bussiness mo
 
 ## To Do
 
-- [ ] Description
-- [ ] Relational Model
+- [ X ] Description
+- [ P ] Relational Model and Model entity
 - [ ] Data base on postgres o MySql
 - [ ] App with php, css and html
 
