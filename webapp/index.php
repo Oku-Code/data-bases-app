@@ -21,11 +21,11 @@
             <article>
                 <h1>Bienvenido</h1>
                 <p>Por favor ingrese sus credenciales para continuar</p>
-                <form action="pages/connect.php" method="POST"> 
+                <form action="connect.php" method="POST"> 
                     <label for="user">Usuario</label>
                     <input type="text" required name="user" placeholder="Escribe tu nombre de usuario">
                     <label for="password">Contraseña</label>
-                    <input type="password" required name="password" placeholder="Escribe tu contraseña">
+                    <input type="password" name="password" placeholder="Escribe tu contraseña">
                     <button type="submit" name="submit-btn">Entrar</button>
                 </form>
                 <small>Previamente el administrador, debio crear el usuario dentro de la base de datos</small>

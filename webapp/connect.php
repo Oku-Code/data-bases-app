@@ -19,21 +19,36 @@
         </header>
         <section>
             <article>
-                <?php
-                    $username = $_POST['user'];
-                    $password = $_POST['password'];
+                <?php                   
+                    $username = "root";
+                    $password = '';
                     $server = 'localhost';
                     $db = 'inmobiliaria';
+                    $conn = mysqli_connect($server, $username, $password, $db);
+                    if(!$conn){
+                        die("Connection failed: ". mysqli_connect_error());
+                    } else {
+                                            
+                        if (isset($_POST["submit-btn"])) {
+                            $user = $_POST["user"];
+                            $pwd = $_POST["password"];
+                            $sql = "SELECT * FROM usuario";
+                            $result = $conn->query($sql);
 
-                    if(isset($_POST['submit-btn'])){
-                        $conn = mysqli_connect($server, $username, $password, $db);
-                        if(!$conn){
-                            die("Connection failed: ". mysqli_connect_error());
-                        } else {
-                            echo "YES ~ ROUNDABOUT";
+                            if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                    if ($row["ide_usu"] == $user && $row["con_usu"]==$pwd) {
+                                        echo "<a href='admin.php'>Ir al panel de control </a>";
+                                    }
+                                }
+                            } else {
+                            echo "0 results";
+                            }
+                            } else {  
+                            echo "No, mail is not set";
                         }
 
-                        mysqli_close($conn)
+                        mysqli_close($conn);
                     };
                 ?>
             </article>
