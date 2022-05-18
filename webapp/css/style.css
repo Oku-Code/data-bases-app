@@ -119,6 +119,80 @@ footer {
     height: 100%;
 }
 
+.title-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.title-two h2 {
+    color: aqua;
+    padding: 1rem;
+}
+
+.admin {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.crud-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crud-container label {
+    padding: 0.8rem;
+}
+
+.crud-container button {
+    margin: 0 auto;
+    width: 40%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.create-btn {
+    background-color: #28a745;
+    color: white;
+
+}
+
+.read-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.up-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+p,
+label {
+    font: 1rem 'Inter', sans-serif;
+}
+
+input {
+    margin: .8rem;
+}
+
+
 @media (min-width: 900px) {
     form input {
         width: 30%;
