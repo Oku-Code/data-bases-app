@@ -21,9 +21,7 @@
             <article>
                 <h1>Bienvenido</h1>
                 <p>Por favor ingrese sus credenciales para continuar</p>
-                <form action="pages/connect.php" method="POST">
-                    <label for="server">Sever</label>
-                    <input type="text" required name="server" placeholder="Nombre del servidor">
+                <form action="pages/connect.php" method="POST"> 
                     <label for="user">Usuario</label>
                     <input type="text" required name="user" placeholder="Escribe tu nombre de usuario">
                     <label for="password">Contraseña</label>

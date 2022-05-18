@@ -20,17 +20,21 @@
         <section>
             <article>
                 <?php
-                    $username = 'user';
-                    $password = 'mysqlserver';
+                    $username = $_POST['user'];
+                    $password = $_POST['password'];
                     $server = 'localhost';
                     $db = 'inmobiliaria';
 
-                    $conn = mysqli_connect($server, $username, $password, $db);
-                    if(!$conn){
-                        die("Connection failed: ". mysqli_connect_error());
-                    } else {
-                        echo "YES ~ ROUNDABOUT";
-                    }
+                    if(isset($_POST['submit-btn'])){
+                        $conn = mysqli_connect($server, $username, $password, $db);
+                        if(!$conn){
+                            die("Connection failed: ". mysqli_connect_error());
+                        } else {
+                            echo "YES ~ ROUNDABOUT";
+                        }
+
+                        mysqli_close($conn)
+                    };
                 ?>
             </article>
         </section>    
