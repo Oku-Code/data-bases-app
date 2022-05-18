@@ -53,3 +53,15 @@ La inmobiliaria **Predios Colombia** buscan un sistema para el seguimiento y con
 1. Generar estados durante las operaciones que se realizan a la hora de consultar los datos.
 2. La plataforma debe ser accesible desde cualquier dispositivo conectado a la red.
 3. La plataforma debe contar con una interfaz amigable para que pueda ser utilizada por cualquier persona
+
+### Imagenes del modelo logìco y modelo relacional
+
+![alt text](./images/modelo.jpeg)
+
+> Modelo relacional: resultado final
+
+![alt text](./images/modeloLogico.jpg)
+
+> Modelo logìco: resultado final
+
+

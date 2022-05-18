@@ -13,8 +13,8 @@ body {
 
 header {
     background-color: #222;
-    display: flex;
-    align-content: space-between;
+    display: flex; 
+    justify-content: center;
     height: 90px;
     padding: 30px 20px;
 }
@@ -29,14 +29,14 @@ header h2 {
 header .title {
     display: flex;
     align-items: center;
-    float: right;
+   
 }
 
 header .nicks {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    float: left;
+
 }
 
 header a {
@@ -44,7 +44,6 @@ header a {
     text-align: center;
     color: aqua;
     text-decoration: none;
-    margin: 0;
 }
 
 section {
