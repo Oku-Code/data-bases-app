@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bases de datos</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <main>
@@ -23,7 +23,7 @@
                 <p>Ingresa los datos correspondientes a la creaciòn de un pedido</p>
            </div>
             <article class="admin"> 
-                <form class="crud-create" action="crear.php">
+                <form class="crud-create" action="crear_pedido.php">
                     <label for="id">Identificaciòn</label>
                     <input type="text" name="id" placeholder="Inserta el ID del predio" required>
                     <label for="id">Direcciòn del predio</label>
@@ -31,10 +31,14 @@
                     <label for="id">Estado del predio</label>
                     <input type="text" name="id" placeholder="Inserta la direcciòn del predio" required>
                     <button type="submit" class="create-btn create">Crear</button>
-                    <a class="back" href="../index.php">Volver a la pagina principal </a>
+                    <a class="back" href="../admin.php">Volver a la pagina principal </a>
                 </form>
             </article> 
         </section>    
     </main>
 </body>
 </html>
+
+<?php
+    echo "Code here";
+?>

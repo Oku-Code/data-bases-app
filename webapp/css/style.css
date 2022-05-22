@@ -215,6 +215,24 @@ footer {
     font-weight: 700;
 }
 
+/* Form crud-create */
+.crud-create {
+    margin-top: 0;
+}
+
+.crud-create input {
+    width: 50%;
+}
+
+.create-crud .create {
+    width: 100%;
+}
+
+.back {
+    text-decoration: none;
+    color: aqua;
+}
+
 /* For small devices*/
 @media (max-width: 900px) {
     form input {
