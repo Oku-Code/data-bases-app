@@ -22,49 +22,68 @@
                 <h2>Bienvenido Administrador</h2>
                 <p>Que quieres hacer hoy</p>
            </div>
-           <div class="check-tablas">
-               <fieldset>
-                   <legend>Selecciona una tabla para comenzar</legend>
-                   <div>
-                       <input type="radio" name="table" id="predio" value="predio">
-                       <label for="predio">Predio</label> 
-                   </div>
-                   <div>
-                       <input type="radio" name="table"  id="arrendador" value="arrendador">
-                       <label for="arrendador">Arrendador</label> 
-                   </div>
-                   <div>
-                       <input type="radio" name="table"  value="arrendatario" id="arrendatario">
-                       <label for="arrendatario">Arrendatario</label> 
-                   </div>
-                   <div>
-                       <input type="radio" name="table"  value="comprador" id="comprador">
-                       <label for="comprador">Comprador</label> 
-                   </div>
-                   <div>
-                       <input type="radio" name="table"  value="vendedor" id="vendedor">
-                       <label for="vendedor">Vendedor</label> 
-                   </div>
-               </fieldset>
-           </div>
             <article class="admin"> 
-                <div class="crud-container">
-                   <h3>Operaciones</h3>
-                   <label for="create">Crear</label> 
-                   <button type="button" class="create-btn">Crear</button>
-                   <label for="create">Ver</label> 
-                   <button type="button" class="read-btn">Ver</button>
-                   <label for="create">Actualizar</label> 
-                   <button type="button" class="up-btn">Actualizar</button>
-                   <label for="create">Eliminar</label> 
-                   <button type="button" class="delete-btn">Eliminar</button>
-                </div>
-
-                <div class="datos">
-                    
-                </div>
+                <table class="info">
+                    <thead class="values">
+                        <tr>
+                            <th>Nombre de la tabla</th>
+                            <th>Crud de la tabla</th>
+                        </tr>
+                        <tr>
+                    </thead>
+                    <tbody>
+                            <th>Predio</th>
+                            <th>
+                                <a href="pages/predio.php">
+                                    <button type="button" class="create-btn">Crud Predio</button>
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Arrendador</th>
+                            <th>
+                                <a href="arrendador.php">
+                                    <button type="button" class="create-btn">Crud Arrendador</button>
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Arrendatario</th>
+                            <th>
+                                <a href="arrendatario.php">
+                                    <button type="button" class="create-btn">Crud Arrendatario</button>
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Comprador</th>
+                            <th>
+                                <a href="comprador.php">
+                                    <button type="button" class="create-btn">Crud Comprador</button>
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Vendedor</th>
+                            <th>
+                                <a href="vendedor.php">
+                                    <button type="button" class="create-btn">Crud Vendedor</button>
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Vendedor</th>
+                            <th>
+                                <a href="pago.php">
+                                    <button type="button" class="create-btn">Crud Pago</button>
+                                </a>
+                            </th>
+                        </tr>
+                    </tbody> 
+                </table>
             </article>
         </section>    
     </main>
 </body>
 </html>
+

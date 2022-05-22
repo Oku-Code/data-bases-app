@@ -19,7 +19,7 @@
         </header>
         <section>
             <div class="title-two">
-                <h2>Bienvenido al crud de pago</h2>
+                <h2>Bienvenido al crud de contrato</h2>
                 <p>Que quieres hacer hoy</p>
             <button class="create-btn create-query">
                <a href="#">Crear</a>
@@ -29,12 +29,10 @@
                 <table class="info">
                     <thead class="values">
                         <tr>
-                            <th>Identificaciòn</th>
-                            <th>Valor</th>
-                            <th>Tipo de pago</th>
-                            <th>Fecha de pago</th>
-                            <th>Identificaciòn del arrendatario</th>
-                            <th>Identificaciòn del comprador</th>
+                            <th>Numero</th>
+                            <th>Tipo</th>
+                            <th>Vigencia Mes</th>
+                            <th>Identificaciòn predio</th>
                         </tr>
                     </thead>
                     <tbody>

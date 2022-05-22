@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+/** basic styles**/
+
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +12,8 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #23272d;
 }
+
+/** Header **/
 
 header {
     background-color: #222;
@@ -46,6 +50,7 @@ header a {
     text-decoration: none;
 }
 
+/** Content of the page **/
 section {
     width: 85%;
     margin: 0 auto;
@@ -68,6 +73,8 @@ h1 {
 p {
     padding: 0.5rem;
 }
+
+/** For the form from the main page **/
 
 form {
     display: flex;
@@ -107,9 +114,11 @@ form button {
 
 }
 
-small {
+.alerts {
     color: aqua;
     font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 footer {
@@ -119,6 +128,7 @@ footer {
     height: 100%;
 }
 
+/* Main content of the pages*/
 .title-two {
     display: flex;
     flex-direction: column;
@@ -133,34 +143,37 @@ footer {
     padding: 1rem;
 }
 
+.title-two p {
+    margin-bottom: 1rem;
+}
+
 .admin {
     text-decoration: none;
     color: white;
     padding: 0.5rem;
     font-weight: 700;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
-.crud-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.admin .info {
+    width: 100%;
+    border: 0.5px solid white;
+    border-collapse: collapse;
 }
 
-.crud-container label {
-    padding: 0.8rem;
+.info th  {
+    padding: 1rem;
+    border: 0.5px solid white;
 }
 
-.crud-container button {
-    margin: 0 auto;
-    width: 40%;
-    height: 35px;
+.info button {
     border: none;
     border-radius: 5px;
-    padding: 0.2rem;
+    width: 60%;
     cursor: pointer;
+    height: 40px;
 }
+
+/** Buttons for reuse **/
 
 .create-btn {
     background-color: #28a745;
@@ -183,17 +196,27 @@ footer {
     color: white;
 }
 
-p,
-label {
-    font: 1rem 'Inter', sans-serif;
+/** Styles for all crud pages **/
+
+.create-query {
+    width: 60%;
+    margin-top: 1rem;
+    margin: 0 auto;
+    border:none;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-input {
-    margin: .8rem;
+.create-query a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
 }
 
-
-@media (min-width: 900px) {
+/* For small devices*/
+@media (max-width: 900px) {
     form input {
         width: 30%;
     }
