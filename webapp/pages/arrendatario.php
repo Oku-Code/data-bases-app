@@ -37,11 +37,27 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!--PHP Code here-->
+                        <?php 
+                            include '../conexion.php';
+                            $pdo = 'SELECT * FROM arrendatario ORDER BY ide_art;';
+                            foreach ($pdo->query($sql) as $row){
+                                echo '<tr>';
+                                echo '<td>'. $row['ide_art'] . '</td>';
+                                echo '<td>'. $row['nom_art'] . '</td>';
+                                echo '<td>'. $row['email_art'] . '</td>';
+                                echo '<td>'. $row['tel_art'] . '</td>';
+                                echo '<td>'. $row['ide_pre'] . '</td>';
+                                echo '<td><a href="../crud_pages/leer_predio.php?id='.$row['ide_art'].'"><button type="button" class="read-btn">Leer</button></a></td>';
+                                echo '<td><a href="../crud_pages/actualizar_predio.php?id='.$row['ide_art'].'"><button type="button" class="up-btn">Actualizar</button></a></td>';
+                                echo '<td><a href="../crud_pages/eliminar_predio.php?id='.$row['ide_art'].'"><button type="button" class="delete-btn">Eliminar</button></a></td>';
+                                echo '</tr>';
+                            } 
+                       ?> 
                     </tbody>
                 </table>
             </article>
             <small class="alerts">Las tablas deben estar presentes en la base de datos !!!</small>
+            <a class="back" href="../admin.php">Volver a la pagina principal </a>
         </section>    
     </main>
 </body>

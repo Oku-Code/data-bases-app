@@ -1,8 +1,8 @@
 <?php 
     require 'conexion.php';
 
-    if ( !empty($_GET['ide_pre'])) {
-        $ide_pre = $_REQUEST['ide_pre'];
+    if ( !empty($_GET['id'])) {
+        $ide_pre = $_REQUEST['id'];
     }
      
     if ( !empty($_POST)) {
@@ -16,7 +16,7 @@
         $q = $pdo->prepare($sql);
         $q->execute(array($ide_pre));
         Database::disconnect();
-        header("Location: predio.php");
+        header("Location: ../pages/predio.php");
          
     }
 ?>
@@ -45,11 +45,11 @@
                 <h2>Eliminar un pedido</h2>
            </div>
             <article class="admin"> 
-                <form class="crud-create" method="POST" action="eliminar.php">
+                <form class="crud-create" method="POST" action="eliminar_predio.php">
                   <input type="hidden" name="ide_pre" value="<?php echo $ide_pre;?>"/>
-                  <p> ¿ Seguro que desea eliminar este predio ?</p>
+                  <p class="alert">¿ Seguro que desea eliminar este predio ?</p>
                   <button type="submit" class="delete-btn">Si</button>
-                  <a href="crear_predio.php">NO</a> 
+                  <a href="../pages/predio.php">NO</a> 
                 </form>
             </article> 
         </section>    

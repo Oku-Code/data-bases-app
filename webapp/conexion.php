@@ -3,7 +3,7 @@
        private static $dbName = "inmobiliaria";
        private static $dbHost = "localhost";
        private static $dbUser = "root";
-       private static $dbPasswd = "root";
+       private static $dbPasswd = "";
 
        private static $conn = null;
 
@@ -15,7 +15,7 @@
            if(null == self::$conn){
                try {
                    self::$conn = new PDO(
-                       "Mysql Host: " . self::$dbHost ."\n". "Database Name: " . self::$dbName, self::$dbUser, self::$dbPasswd
+                       "mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUsername, self::$dbUserPassword); self::$dbUser, self::$dbPasswd
                     )
                } catch (PODExection $error) {
                     die($error->getMessage());

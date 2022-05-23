@@ -1,3 +1,44 @@
+<?php
+     require '../conexion.php';
+
+     if (!empty($_POST)) {
+         $idError = null;
+         $dirError = null;
+         $estError = null;
+          
+         $id = $_POST['id'];
+         $dir = $_POST['dir'];
+         $est = $_POST['est'];
+          
+         $valid = true;
+         if (empty($id)) {
+             $idError = 'Por favor ingrese el ID';
+             $valid = false;
+         }
+          
+         if (empty($dir)) {
+             $dirError = 'Por favor ingrese la dirección';
+             $valid = false;
+         } 
+          
+         if (empty($est)) {
+             $estError = 'Por favor ingrese el estrato';
+             $valid = false;
+         }
+          
+         if ($valid) {
+             $pdo = Database::connect();
+             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+             $sql = "INSERT INTO predio (ide_pre,dir_pre,est_pre) values(?, ?, ?)";
+             $q = $pdo->prepare($sql);
+             $q->execute(array($id,$dir,$est));
+             Database::disconnect();
+             header("Location: ../pages/predio.php");
+         }
+     }
+ ?>
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +76,7 @@
                     <label for="id">Identificaciòn del predio</label>
                     <input type="number" name="id" placeholder="" required>
                     <button type="submit" class="create-btn create">Crear</button>
-                    <a class="back" href="../admin.php">Volver a la pagina principal </a>
+                    <a class="back" href="../admin.php">Volver a la pagina principal</a>
                 </form>
             </article> 
         </section>    
@@ -43,6 +84,4 @@
 </body>
 </html>
 
-<?php
-    echo "Code here";
-?>
+

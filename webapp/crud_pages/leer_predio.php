@@ -42,21 +42,14 @@
                 <h2>Informacion sobre el predio</h2>
            </div>
             <article class="admin"> 
-               <table>
-                   <thead>
-                       <th>Identificaciòn del predio</th>
-                       <th>Direcciòn del predio</th>
-                       <th>Estrato del predio</th>
-                   </thead>
-                   <tbody>
-                       <?php
-                            echo '<tr>$data['ide_pre']</tr>';
-                            echo '<tr>$data['dir_pre']</tr>';
-                            echo '<tr>$data['est_pre']</tr>';
-                       ?>
-                   </tbody>
-                </table>
-                </form>
+                <h2>Predio leido</h2>
+                <h3>Identificaciòn del predio</h3>
+                <p><?php echo $data['ide_pre'];?></p>
+                <h3>Direcciòn del predio</h3>
+                <p><?php echo $data['dir_pre'];?></p>
+                <h3>Estrato del predio</h3>
+                <p><?php echo $data['est_pre'];?></p>
+                <a class="back" href="../pages/predio.php">Volver a la pagina principal</a>
             </article> 
         </section>    
     </main>
