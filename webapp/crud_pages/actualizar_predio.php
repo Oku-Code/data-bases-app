@@ -87,14 +87,14 @@
                 <form class="crud-create" action="actualizar_predio.php?ide_pre=<?php echo $ide_pre?>" method="POST">
                    <div class="control <? php echo !empty($idError) ? 'Error' : '';?>">
                         <label for="id">Identificaciòn</label>
-                        <input type="text" name="id" placeholder="Inserta el ID del predio" value="<?php echo !empty($id)?$id:'';?>">
+                        <input type="text" name="id" placeholder="Inserta el ID del predio" value="<?php echo !empty($ide_pre)?$ide_pre:'';?>">
                         <?php
                             if (!empty($idError)) : ?>
                             <span><?php echo $idError; ?></span>
                         <?php endif; ?>
                     </div>
 
-                    <div <? php echo !empty($dirError) ? '<span>Error</span>' : '';?>>
+                    <div class="control" <? php echo !empty($dirError) ? 'Error' : '';?>>
                         <label for="id">Direcciòn del predio</label>
                         <input type="text" name="dir" placeholder="Inserta la direcciòn del predio" value="<?php echo !empty($dir) ? $dir: '';?>">
                         <?php
@@ -103,7 +103,7 @@
                         <?php endif; ?>
                     </div>
                     
-                    <div <? php echo !empty($estError) ? '<span>Error</span>' : '';?>>
+                    <div class="control" <? php echo !empty($estError) ? 'Error' : '';?>>
                         <label for="id">Estrato del predio</label>
                         <input type="text" name="est" placeholder="Inserta la direcciòn del predio" value="<?php echo !empty($est) ? $est: '';?>">
                         <?php

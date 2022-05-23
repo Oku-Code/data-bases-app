@@ -1,15 +1,15 @@
 <?php 
-    require 'conexion.php';
+    require '../conexion.php';
+
+    $ide_pre = 0;
 
     if ( !empty($_GET['id'])) {
         $ide_pre = $_REQUEST['id'];
     }
      
     if ( !empty($_POST)) {
-        // keep track post values
         $ide_pre = $_POST['ide_pre'];
          
-        // delete data
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "DELETE FROM predio  WHERE ide_pre = ?";
