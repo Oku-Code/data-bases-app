@@ -19,8 +19,8 @@
         </header>
         <section>
             <div class="title-two">
-                <h2>Crear un pedido</h2>
-                <p>Ingresa los datos correspondientes a la creaciòn de un pedido</p>
+                <h2>Actualizar un pedido</h2>
+                <p>Ingresa los datos correspondientes a la actualizaciòn de un pedido</p>
            </div>
             <article class="admin"> 
                 <form class="crud-create" action="crear_pedido.php" method="POST">

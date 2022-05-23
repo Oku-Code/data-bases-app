@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bases de datos</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <main>
@@ -19,19 +19,47 @@
         </header>
         <section>
             <div class="title-two">
-                <h2>Crear un pedido</h2>
-                <p>Ingresa los datos correspondientes a la creaciòn de un pedido</p>
+                <h2>Eliminar un pedido</h2>
            </div>
             <article class="admin"> 
-                <form class="crud-create" action="crear.php">
-                    <label for="id">Identificaciòn</label>
-                    <input type="text" name="id" placeholder="Inserta el ID del predio" required>
-                    <label for="id">Direcciòn del predio</label>
-                    <input type="text" name="id" placeholder="Inserta la direcciòn del predio" required>
-                    <label for="id">Estado del predio</label>
-                    <input type="text" name="id" placeholder="Inserta la direcciòn del predio" required>
-                    <button type="submit" class="create-btn create">Crear</button>
-                    <a class="back" href="../index.php">Volver a la pagina principal </a>
+               <div class="span10 offset1">
+                    <div class="row">
+                        <h3>Predio</h3>
+                    </div>
+                     
+                    <div class="form-horizontal" >
+                      <div class="control-group">
+                        <label class="control-label">ID</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['ide_pre'];?>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Dirección</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['dir_pre'];?>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Estrato</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['est_pre'];?>
+                            </label>
+                        </div>
+                      </div>
+                        <div class="form-actions">
+                          <a class="btn" href="index.php">Volver</a>
+                       </div>
+                     
+                      
+                    </div>
+                </div>
+                 
                 </form>
             </article> 
         </section>    

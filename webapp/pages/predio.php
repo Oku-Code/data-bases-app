@@ -36,7 +36,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!--PHP Code here-->
+                        <?php
+                            echo '<tr>' 
+                                echo '<button type="button" class="read-btn"><a href="../crud_pages/leer_predio.php?id='.$row['id'].'">Read</a></button>';
+                                echo '<button type="button" class="up-btn"><a href="../crud_pages/actualizar_predio.php?id='.$row['id'].'">Update</a></button>';
+                                echo '<button type="button" class="delete-btn"><a href="../crud_pages/eliminar_predio.php?id='.$row['id'].'">Delete</a></button>';
+                            echo '</tr>'
+                        ?>
                     </tbody>
                 </table>
             </article>
