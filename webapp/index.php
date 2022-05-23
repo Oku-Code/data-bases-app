@@ -21,7 +21,7 @@
             <article>
                 <h1>Bienvenido</h1>
                 <p>Por favor ingrese sus credenciales para continuar</p>
-                <form action="connect.php" method="POST"> 
+                <form action="validate.php" method="POST"> 
                     <label for="user">Usuario</label>
                     <input type="text" required name="user" placeholder="Escribe tu nombre de usuario">
                     <label for="password">Contraseña</label>

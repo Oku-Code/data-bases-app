@@ -18,3 +18,47 @@
     }
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bases de datos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="title">
+                <h2>Bases de datos</h2>
+            </div> 
+            <div class="nicks">
+                <a href="#">Oku</a>
+                <a href="#">MacheWD</a>
+            </div>
+        </header>
+        <section>
+            <div class="title-two">
+                <h2>Informacion sobre el predio</h2>
+           </div>
+            <article class="admin"> 
+               <table>
+                   <thead>
+                       <th>Identificaciòn del predio</th>
+                       <th>Direcciòn del predio</th>
+                       <th>Estrato del predio</th>
+                   </thead>
+                   <tbody>
+                       <?php
+                            echo '<tr>$data['ide_pre']</tr>';
+                            echo '<tr>$data['dir_pre']</tr>';
+                            echo '<tr>$data['est_pre']</tr>';
+                       ?>
+                   </tbody>
+                </table>
+                </form>
+            </article> 
+        </section>    
+    </main>
+</body>
+</html>

@@ -41,7 +41,8 @@
 
 <?php
     require 'conexion.php';
-    if ( !empty($_POST)) {
+
+    if (!empty($_POST)) {
         $idError = null;
         $dirError = null;
         $estError = null;
