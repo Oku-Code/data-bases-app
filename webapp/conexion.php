@@ -15,7 +15,7 @@
            if(null == self::$conn){
                try {
                    self::$conn = new PDO(
-                       "mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUser, self::$dbUserPasswd); self::$dbUser, self::$dbPasswd
+                       "mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUser, self::$dbUserPasswd; 
                     )
                } catch (PODExection $error) {
                     die($error->getMessage());
