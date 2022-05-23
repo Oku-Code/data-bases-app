@@ -42,7 +42,7 @@
                         <tr>
                             <th>Arrendador</th>
                             <th>
-                                <a href="arrendador.php">
+                                <a href="pages/arrendador.php">
                                     <button type="button" class="create-btn">Crud Arrendador</button>
                                 </a>
                             </th>
@@ -50,7 +50,7 @@
                         <tr>
                             <th>Arrendatario</th>
                             <th>
-                                <a href="arrendatario.php">
+                                <a href="pages/arrendatario.php">
                                     <button type="button" class="create-btn">Crud Arrendatario</button>
                                 </a>
                             </th>
@@ -58,7 +58,7 @@
                         <tr>
                             <th>Comprador</th>
                             <th>
-                                <a href="comprador.php">
+                                <a href="pages/comprador.php">
                                     <button type="button" class="create-btn">Crud Comprador</button>
                                 </a>
                             </th>
@@ -66,16 +66,8 @@
                         <tr>
                             <th>Vendedor</th>
                             <th>
-                                <a href="vendedor.php">
+                                <a href="pages/vendedor.php">
                                     <button type="button" class="create-btn">Crud Vendedor</button>
-                                </a>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>Vendedor</th>
-                            <th>
-                                <a href="pago.php">
-                                    <button type="button" class="create-btn">Crud Pago</button>
                                 </a>
                             </th>
                         </tr>
