@@ -25,11 +25,11 @@
             <article class="admin"> 
                 <form class="crud-create" action="crear_pedido.php">
                     <label for="id">Identificaciòn</label>
-                    <input type="text" name="id" placeholder="Inserta el ID del predio" required>
+                    <input type="text" name="id" placeholder="Inserta el ID del predio" required value="<?php echo !empty($id)?$id:'';?>">
                     <label for="id">Direcciòn del predio</label>
-                    <input type="text" name="id" placeholder="Inserta la direcciòn del predio" required>
-                    <label for="id">Estado del predio</label>
-                    <input type="text" name="id" placeholder="Inserta la direcciòn del predio" required>
+                    <input type="text" name="dir" placeholder="Inserta la direcciòn del predio" required value="<?php echo !empty($dir) ? $dir: '';?>">
+                    <label for="id">Estrato del predio</label>
+                    <input type="text" name="est" placeholder="Inserta la direcciòn del predio" required value="<?php echo !empty($est) ? $est: '';?>">
                     <button type="submit" class="create-btn create">Crear</button>
                     <a class="back" href="../admin.php">Volver a la pagina principal </a>
                 </form>
@@ -40,5 +40,40 @@
 </html>
 
 <?php
-    echo "Code here";
+    require 'conexion.php';
+    if ( !empty($_POST)) {
+        $idError = null;
+        $dirError = null;
+        $estError = null;
+         
+        $id = $_POST['id'];
+        $dir = $_POST['dir'];
+        $est = $_POST['est'];
+         
+        $valid = true;
+        if (empty($id)) {
+            $idError = 'Por favor ingrese el ID';
+            $valid = false;
+        }
+         
+        if (empty($dir)) {
+            $dirError = 'Por favor ingrese la dirección';
+            $valid = false;
+        } 
+         
+        if (empty($est)) {
+            $estError = 'Por favor ingrese el estrato';
+            $valid = false;
+        }
+         
+        if ($valid) {
+            $pdo = Database::connect();
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql = "INSERT INTO predio (ide_pre,dir_pre,est_pre) values(?, ?, ?)";
+            $q = $pdo->prepare($sql);
+            $q->execute(array($id,$dir,$est));
+            Database::disconnect();
+            header("Location: predio.php");
+        }
+    }
 ?>

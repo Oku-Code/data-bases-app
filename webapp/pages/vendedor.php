@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bases de datos</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <main>
@@ -22,7 +22,7 @@
                 <h2>Bienvenido al crud de vendedor</h2>
                 <p>Que quieres hacer hoy</p>
             <button class="create-btn create-query">
-               <a href="#">Crear</a>
+               <a href="../crud_pages/crear_predio.php">Crear</a>
             </button>
            </div>
             <article class="admin"> 
